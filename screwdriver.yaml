@@ -3,5 +3,5 @@ jobs:
         requires: [~pr, ~commit]
         template: screwdriver/android-build
         steps:
-            - preprebuild: echo 'Attempting to retrieve template.
-            - postpostbuild: echo 'Job's done.
+            - preprebuild: echo 'Attempting to retrieve template.'
+            - postpostbuild: echo 'Job's done.'
