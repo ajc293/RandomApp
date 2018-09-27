@@ -1,6 +1,3 @@
-shared:
-    image: node:6
-
 jobs:
     builder:
         requires: [~pr, ~commit]
@@ -8,5 +5,3 @@ jobs:
         steps:
             - preprebuild: echo 'Attempting to retrieve template.
             - postpostbuild: echo 'Job's done.
-        environment:
-              SD_TEMPLATE_PATH: './sd-template-publish.yaml'
