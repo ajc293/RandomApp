@@ -3,5 +3,5 @@ jobs:
         requires: [~pr, ~commit]
         template: screwdriver/android-build
         steps:
-            - preprebuild: echo 'Attempting to retrieve template.'
-            - postpostbuild: mv ./app/build/outputs/apk/release/app-release-unsigned.apk $SD_ARTIFACTS_DIR/release.apk
+            - prebuild: echo 'Attempting to retrieve template.'
+            - postbuild: mv ./app/build/outputs/apk/release/app-release-unsigned.apk $SD_ARTIFACTS_DIR/release.apk
